@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="19" assertions="53" errors="0" failures="0" skipped="0" time="3.782865">
+    <testsuite name="App\Tests\CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" tests="4" assertions="12" errors="0" failures="0" skipped="0" time="0.981862">
+      <testcase name="testLogin" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="15" assertions="1" time="0.663557"/>
+      <testcase name="testGetCategories" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="38" assertions="5" time="0.107385"/>
+      <testcase name="testCreateInvalidCategory" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="69" assertions="3" time="0.136847"/>
+      <testcase name="testCreateValidCategory" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="112" assertions="3" time="0.074073"/>
+    </testsuite>
+    <testsuite name="App\Tests\DestinationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\DestinationTest.php" tests="4" assertions="11" errors="0" failures="0" skipped="0" time="0.577500">
+      <testcase name="testLogin" class="App\Tests\DestinationTest" classname="App.Tests.DestinationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\DestinationTest.php" line="15" assertions="1" time="0.301263"/>
+      <testcase name="testGetDestinations" class="App\Tests\DestinationTest" classname="App.Tests.DestinationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\DestinationTest.php" line="37" assertions="5" time="0.077288"/>
+      <testcase name="testCreateInvalidDestination" class="App\Tests\DestinationTest" classname="App.Tests.DestinationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\DestinationTest.php" line="66" assertions="3" time="0.107193"/>
+      <testcase name="testCreateValidDestination" class="App\Tests\DestinationTest" classname="App.Tests.DestinationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\DestinationTest.php" line="94" assertions="2" time="0.091756"/>
+    </testsuite>
+    <testsuite name="App\Tests\LocationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\LocationTest.php" tests="4" assertions="11" errors="0" failures="0" skipped="0" time="0.787818">
+      <testcase name="testLoginOwner" class="App\Tests\LocationTest" classname="App.Tests.LocationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\LocationTest.php" line="15" assertions="1" time="0.342801"/>
+      <testcase name="testGetLocations" class="App\Tests\LocationTest" classname="App.Tests.LocationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\LocationTest.php" line="36" assertions="5" time="0.153015"/>
+      <testcase name="testCreateInvalidLocation" class="App\Tests\LocationTest" classname="App.Tests.LocationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\LocationTest.php" line="63" assertions="3" time="0.137961"/>
+      <testcase name="testCreatevalidLocation" class="App\Tests\LocationTest" classname="App.Tests.LocationTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\LocationTest.php" line="124" assertions="2" time="0.154041"/>
+    </testsuite>
+    <testsuite name="App\Tests\UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" tests="7" assertions="19" errors="0" failures="0" skipped="0" time="1.435685">
+      <testcase name="testLoginAdmin" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="16" assertions="2" time="0.339695"/>
+      <testcase name="testLoginWrongUser" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="37" assertions="2" time="0.034428"/>
+      <testcase name="testLoginUser" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="58" assertions="1" time="0.304318"/>
+      <testcase name="testWrongAdminGetUsers" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="81" assertions="2" time="0.051611"/>
+      <testcase name="testAdminGetUsers" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="107" assertions="5" time="0.079404"/>
+      <testcase name="testRegisterWithoutEmail" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="135" assertions="3" time="0.345882"/>
+      <testcase name="testRegisterValidUser" class="App\Tests\UserTest" classname="App.Tests.UserTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\UserTest.php" line="164" assertions="4" time="0.280347"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

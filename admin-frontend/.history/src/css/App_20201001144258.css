@@ -1,0 +1,445 @@
+:root {
+  --primaryColor: #1c6e86;
+  --secondaryColor :#060818;
+  --tierColor: #1e2020;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "title-logo";
+  src: url("./../polices/vagnotie.otf");
+}
+@font-face {
+  font-family: "title-block";
+  src: url("./../polices/Vogue.ttf");
+}
+@font-face {
+  font-family: "title-secondaire";
+  src: url("./../polices/ArcaMajora3-Bold.otf");
+}
+@font-face {
+  font-family : "sans-serifSpe";
+  src: url("./../polices/Myriad-Pro_31655.ttf");
+}
+
+.blue-sky {
+  background-color: var(--secondaryColor);
+}
+body .blue-Marine {
+  background-color: var(--primaryColor);
+}
+
+.titleBlock {
+  font-family: "title-block";
+  padding-top: 30px;
+  font-size: 1.3rem;
+  color: var(--tiercolor);
+}
+.titleConte{
+  text-align: center;
+}
+.btnNb{
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: "title-secondaire";
+  font-size: 1rem;
+}
+.secondaryNb {
+  color: var(--secondaryColor);
+}
+.btnNb:hover {
+  text-decoration: none;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+}
+.conteneurBtn {
+  padding-top: 20px;
+}
+img {
+  width: 100%;
+}
+
+/* **********************************SECTION PRINCIPAL***************************************************** */
+
+#searchSection {
+  background: url("../media/presentation.jpg") no-repeat center center/cover;
+  height: 83vh;
+}
+#conteneur_searchForm {
+  height: 30vh;
+}
+body button.secondaryNb {
+  width: 300px;
+  background-color: rgba(28, 110, 134, 0.8);
+  font-size: 1.3rem;
+  border-color: var(--secondaryColor);
+  box-shadow: 2px 1px 4px var(--secondaryColor);
+}
+body button.secondaryNb:hover {
+  width: 300px;
+  background-color: rgba(232, 241, 248, 0.8);
+  font-size: 1.3rem;
+  border-color: var(--primaryColor);
+  box-shadow: 2px 1px 4px var(--primaryColor);
+  color: var(--tierColor);
+}
+/* ****************************Conteneur Experience**************************************************** */
+.conteneurSubCard h2 {
+  font-family: "title-secondaire";
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+.conteneurEtoile {
+  padding-bottom: 2px;
+  height: 30px;
+}
+.conteneurSubCard img {
+  width: 6.5%;
+}
+/* ****************************Conteneur Nos Destinations**************************************************** */
+#destionationsAccueil {
+  padding-bottom: 3.5vh;
+}
+#destionationsAccueil .conteneurSubCard h2 {
+  padding-bottom: 10px;
+}
+
+.titleConte span{
+  font-family: var(--titleSecondaire);
+}
+/* ***********************************SLOGAN********************************************************************************* */
+#slogan .container{
+  max-width:100%;
+  padding-right:0;
+  padding-left:0;
+  background: url(./../media/slogan.jpg)no-repeat left;
+}
+.trapeze{
+  width: 62%;
+  border-top: 320px solid var(--primaryColor);
+  border-left: 180px solid transparent;
+}
+#slogan .trapeze {
+  position: relative;
+}
+#slogan .trapeze div:first-child{
+    position: absolute;
+    left: 7%;
+    bottom: 8vh;
+}
+#slogan .trapeze h2 {
+  font-family: "title-secondaire";
+  font-size: 1.7rem;
+  color: var(--secondaryColor);
+  padding-bottom: 15px;
+}
+#slogan .trapeze h2 span {
+  display: block;
+}
+#slogan .trapeze div:first-child div img {
+  width: 42%;
+  margin-right: 15px;
+}
+
+/* *****************************************Grid**************************************************************** */
+.d-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-column-gap:1%;
+  grid-row-gap:10px;
+}
+.d-grid div.gridContent{
+  height:42.8vh;
+  overflow: hidden;
+}
+.d-grid div:first-child{
+  grid-column-start:1;
+  grid-column-end: span 2;
+}
+.d-grid .frontGrid{
+  position:relative;
+  z-index:0;
+}
+.d-grid .frontGrid h2{
+  position: absolute;
+  left:0%;
+  top:50%;
+  color:var(--white);
+  font-weight: bold;
+  text-shadow: 1px 2px 3px var(--tierColor);
+}
+.d-grid div .contTitle{
+  height:10vh;
+  background-color: var(--white);
+}
+.d-grid div .contIndicateur{
+  background-color: var(--white);
+  height:8vh;
+  margin-top:10px;
+  font-family: 'sans-serifSpe';
+  color: var(--tierColor);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.d-grid div .contentSpan span:first-child{
+  padding-right: 8px;
+}
+.d-grid div h2{
+  
+  text-align: center;
+  font-family:'title-secondaire';
+  font-size:1.2rem;
+  width:100%;
+}
+
+/* **************************************Form Generique***************************************************************************** */
+.formGenerique{
+  background-color: var(--secondaryColor);
+  min-width: 100%;
+  height:75vh;
+  border-bottom:2px solid var(--white);
+  display:flex;
+  align-items: center;
+}
+.formGenerique h2{
+  font-family: var(--titleSecondaire);
+}
+.formGenerique span{
+  font-family:"sans-serifSpe";
+}
+.formGenerique div.conteneurForm{
+  background-color: var(--white);
+  width:60%;
+}
+.titleConte{
+  margin-bottom:30px;
+}
+.separateur{
+  width:50%;
+  height: 1px;
+  background-color: var(--tierColor);
+  margin-bottom: 30px;
+}
+.form-label{
+  font-family: 'sans-serifSpe';
+  color:var(--tierColor);
+}
+.formGenerique  form{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+}
+.formGenerique .form-group{
+  width:50%;
+}
+.formGenerique .form-control{
+  border:1px  solid var(--primaryColor);
+  width:100%;
+}
+.formGenerique button[type='submit']{
+  width:150px !important;
+}
+.info{
+  color:var(--primaryColor);
+}
+/* *************************************Footer********************************************************************* */
+footer .content{
+  height: 30px;
+  padding-bottom: 10px;
+}
+ 
+footer a {
+  text-decoration: none;
+  color: #000000;
+  padding: 20px;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+footer div img {
+  width: 20%;
+  margin-right: 5px;
+}
+/* ********************************** Affichage des images pour habitats *************************************************************** */
+.custom-card-body {
+  padding: 3rem 0 !important;
+}
+.custom-card-text {
+  font-size: 0.9rem !important;
+  padding: 0.9rem 1.9rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+
+.custom-card-img-top {
+  width: inherit;
+  height: 100%;
+}
+.slider {
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+}
+
+.slider .dot {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  display: inline-block;
+}
+.prev:hover,
+.next:hover {
+  text-decoration: none !important;
+}
+.prev {
+  left: 5px;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 5px;
+  border-radius: 0 3px 3px 0;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.fade-slide {
+  animation-name: fade-slide;
+  animation-duration: 10s;
+}
+@keyframes fade-slide {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* **************************************************************** */
+.pageLubrique{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--secondaryColor);
+}
+
+/***********************************************************PAGE CONTACT************************************************************************************/
+
+.icons{
+  position: relative;
+  top: 25px;
+  left: 52px;
+  color: #7e849d;
+ 
+
+}
+
+.form-inline{
+  position: relative;
+  top: -35px;
+  right: 250px;
+  
+}
+.titlesite, .logo{
+  position: relative;
+  top: -25px;
+  right: 300px;
+  color: #e0e6ed;
+  width: 30px;
+
+}
+
+.icon-env, .icon-bell, .icon-person {
+  position: relative;
+  left: 1100px;
+  top: -35px;
+  color: #888ea8;
+}
+
+.blue-sky{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+input.form-control.form-control-sm.ml-5.w-100 {
+  background-color: #0e1726;
+  color: #7e849d;
+  border-color: #212837;
+ 
+  
+}
+
+button#dropdownMenuButton {
+position: relative;
+left: 91%;
+top: 5%;
+background-color: #1a1c2d;
+color: #d2d8df;
+border-color: #212837;
+font-size: 12px;
+}
+
+
+.icon-list{
+ position: absolute;
+ top:5px;
+ left: 80px;
+ color: #d9dadc;
+ width: 30px;
+ height: 25px;
+
+}
+
+.titlelist{
+ position: relative;
+ top: 3px;
+ left: 2%;
+ color: #d9dadc;
+
+}
+.fond{
+ position: fixed;
+ top: 55px;
+ width: 1500px;
+ right: -1px;
+ background: #1a1c2d;
+}
+

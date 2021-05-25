@@ -1,0 +1,24 @@
+vich_uploader:
+  db_driver: orm
+
+  mappings:
+    categories:
+      uri_prefix: /images/categories
+      upload_destination: "%kernel.project_dir%/public/images/categories"
+      namer: Vich\UploaderBundle\Naming\UniqidNamer
+    locations:
+      uri_prefix: /images/locations
+      upload_destination: "%kernel.project_dir%/public/images/locations"
+      namer: Vich\UploaderBundle\Naming\UniqidNamer
+    thematics:
+      uri_prefix: /images/thematics
+      upload_destination: "%kernel.project_dir%/public/images/thematics"
+      namer: Vich\UploaderBundle\Naming\UniqidNamer
+    destinations:
+      uri_prefix: /images/destinations
+      upload_destination: "%kernel.project_dir%/public/images/destinations"
+      namer: Vich\UploaderBundle\Naming\UniqidNamer
+    activities:
+      uri_prefix: /images/activities
+      upload_destination: "%kernel.project_dir%/public/images/activities"
+      namer: Vich\UploaderBundle\Naming\UniqidNamer

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="3" assertions="9" errors="0" failures="0" skipped="0" time="7.943345">
+    <testsuite name="App\Tests\CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" tests="3" assertions="9" errors="0" failures="0" skipped="0" time="7.943345">
+      <testcase name="testLogin" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="12" assertions="1" time="7.422344"/>
+      <testcase name="testGetCollection" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="35" assertions="5" time="0.338762"/>
+      <testcase name="testCreateInvalidCategory" class="App\Tests\CategoryTest" classname="App.Tests.CategoryTest" file="C:\Users\kifac\OneDrive\Documents\projects\Project\apiatypikhouse\tests\CategoryTest.php" line="75" assertions="3" time="0.182239"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

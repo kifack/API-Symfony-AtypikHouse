@@ -1,0 +1,526 @@
+.bg-image {
+  position: relative;
+  cursor: pointer;
+}
+
+/* .card-img-top:hover + .img-overlay{
+  display: block;
+} */
+
+.details {
+  position: absolute;
+  /* left: 50%; */
+  /* transform:translateX(-50%); */
+  font-size: 15px;
+  bottom: 0;
+  color: white;
+  /* height:3%; */
+  padding: 10px;
+  width: 100%;
+}
+.frontGrid .details p{
+  width:50%;
+}
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+  /* opacity: 0; */
+}
+
+.center-description {
+  position: absolute;
+  top: 40%;
+  color: white;
+  font-size: 1.8rem;
+  min-width:100%;
+  font-weight: bold;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+  z-index: 10;
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+/* Affichage du slider location */
+.custom-card-body {
+  padding: 3rem 0 !important;
+}
+.custom-card-body .card-details {
+  opacity: 0;
+}
+
+/* .custom-card-body:hover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+    } */
+.custom-card-text {
+  font-size: 0.9rem !important;
+  padding: 0.9rem 1.9rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  /* height: 250px; */
+  /* width: 100%; */
+}
+/*	.card-img-top{
+    transform: scale(1);
+    }*/
+/* 	.card-img-top:hover{
+    transform: scale(1.8);
+    }*/
+.custom-card-img-top {
+  width: inherit;
+  /* height: 100%; */
+}
+.slider {
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+}
+
+.slider .dot {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+.dot.active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  display: inline-block;
+}
+.prev:hover,
+.next:hover {
+  text-decoration: none !important;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.prev {
+  left: 5px;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 5px;
+  border-radius: 0 3px 3px 0;
+}
+
+.fade-slide {
+  animation-name: fade-slide;
+  animation-duration: 10s;
+}
+@keyframes fade-slide {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.house-card {
+  position: relative;
+}
+
+/* 
+/* Position the image container (needed to position the left and right arrows) */
+.image-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.location-prev,
+.location-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.location-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.location-prev:hover,
+.location-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #17a2b8;
+  padding: 2px 16px;
+  color: white;
+}
+
+.custom-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.location-active,
+.demo:hover {
+  opacity: 1;
+}
+p.indented {
+  text-indent: 50px;
+}
+*/
+    
+    /* Activities */
+    
+    .slide {
+  display: none;
+}
+/* .img-activity {
+      vertical-align: middle;
+    } */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+
+/* Next & previous buttons */
+.activity-prev,
+.activity-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.activity-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.activity-prev:hover,
+.activity-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.activity-numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activity-active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.custom-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .activity-prev,
+  .activity-next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* *************************************Images********************************************************************* */
+
+#selected-image-container {
+  flex-wrap: wrap;
+  margin: 50px auto;
+  display: flex;
+  /* justify-content: space-between; */
+}
+#selected-image-container .selected-img {
+  margin: 5px 8px;
+  border: 1px solid #eee;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  position: relative;
+}
+#selected-image-container .selected-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+#selected-image-container .selected-img .remove {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #c64845;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+}
+
+#selected-image-container .selected-img .remove:hover {
+  opacity: 0.8;
+}
+
+/* Loader */
+.spinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(0, 0, 0); */
+  /* background-color: #eee; */
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  color: #1c6e86;
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #555555 !important;
+  opacity: 1; /* Firefox */
+}
+
+.booking {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  position: relative;
+}
+
+.booking:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.booking-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

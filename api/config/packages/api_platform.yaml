@@ -1,0 +1,16 @@
+api_platform:
+  title: "ApiAtypikHouse"
+  mapping:
+    paths: ["%kernel.project_dir%/src/Entity"]
+  patch_formats:
+    json:
+      [
+        "application/merge-patch+json",
+        "application/json",
+        "multipart/form-data",
+      ]
+  swagger:
+    versions: [3]
+  # collection:
+  #   pagination:
+  #     items_per_page: 5 # Default value

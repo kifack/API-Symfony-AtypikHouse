@@ -1,0 +1,181 @@
+:root {
+  --primary: #1c6e86;
+  --background: #49a0ae;
+  --selected: #17a2b8;
+  --first: #3863a0;
+  --last: #3863a0;
+}
+.calendar {
+  border-radius: 5px;
+  width: 500px;
+  height: inherit;
+  /* padding: 30px; */
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.calendar-month {
+  width: inherit;
+  user-select: none;
+}
+
+.calendar-notice {
+  padding: 15px;
+  background-color: #f2dede;
+  color: #ad4442;
+}
+.calendar-month_header_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.calendar-month_header {
+  background-image: url("https://www.cia-france.com/media/1558/parcarou1_720x500.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  /* background-color: var(--background); */
+  color: #fff;
+  opacity: 0.8;
+}
+
+.calendar-week,
+.calendar-days_of_week {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: #fff;
+  font-size: 15px;
+}
+.calendar-days_of_week {
+  color: var(--primary);
+  font-size: 17px;
+  /* padding: 8px; */
+  font-weight: 500;
+  display: flex;
+}
+.calendar-days_of_week div {
+  text-align: center;
+  width: calc(100% / 7);
+  padding: 8px 4px;
+  /* width: 60px; */
+}
+
+.calendar-week-day {
+  position: relative;
+  padding: 10px;
+  width: calc(100% / 7);
+  height: 65px;
+  /* height: calc(100% / 3); */
+  /* border: 1px solid red;*/
+  font-size: 18px;
+
+  border: none;
+  margin: 0;
+  outline: none;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.calendar-week-day:focus {
+  outline: none;
+}
+
+.calendar-week-day.is-selectable {
+  cursor: pointer;
+}
+
+.calendar-week-day.is-disabled {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.calendar-week-day.is-current_month {
+  opacity: 1;
+}
+
+.calendar-week-day.is-selected:not(.is-start_selection):not(.is-end_selection) {
+  background: #e3effc;
+  color: #000;
+  border-radius: 0;
+  margin: 0;
+}
+.calendar-week-day.is-selected::before {
+  position: absolute;
+  background: #3863a0;
+  top: 0;
+  left: 0;
+  widows: 100%;
+  height: 100%;
+  z-index: -1;
+  color: #fff;
+  border-radius: 50%;
+}
+.calendar-week-day.is-selected {
+  background: var(--first);
+}
+.calendar-week-day.is-selected.is-start_selection {
+  /* background: var(--first); */
+  color: #fff;
+  border-radius: 50% 0 0 50%;
+  z-index: 10;
+}
+
+.calendar-week-day.is-selected.is-end_selection {
+  background: var(--last);
+  border-radius: 0 50% 50% 0;
+  color: #fff;
+}
+.calendar-header_button {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 23px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: all 0.4s;
+}
+.calendar-header_button:focus {
+  outline: none;
+}
+.calendar-header_button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-highlighted {
+  background-color: green;
+}
+
+.StripeElement {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #eee;
+}
+
+.btn-pay {
+  display: block;
+  width: 100%;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    rgb(49, 0, 62) 0%,
+    rgb(195, 40, 110) 100%
+  );
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}

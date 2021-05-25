@@ -1,0 +1,114 @@
+:root {
+  --primaryColor: #0090d9;
+  --secondaryColor: #e8f1f8;
+  --tierColor: #1e2020;
+  --white: #ffffff;
+}
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  transition: 0.4s;
+  transition-property: width;
+  background-color: #fff;
+
+  /* background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%); */
+  /* overflow-y: auto; */
+}
+
+.sidebar ul {
+  /* color: var(--primaryColor); */
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.sidebar .menu li {
+  line-height: 60px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.sidebar .menu li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.sidebar .menu li a {
+  position: relative;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 16px;
+  padding-left: 20px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+.sidebar .menu li a > i {
+  color: var(--primaryColor);
+  padding-right: 8px;
+}
+.sidebar .menu li.active a {
+  color: #fff;
+  background: #4e73df;
+  /* border-left-color: #000; */
+}
+.sidebar .menu li a:hover {
+  /* background-color: #4e73df; */
+  opacity: 0.9;
+  color: var(--primaryColor);
+}
+.sidebar .menu ul {
+  position: static;
+  display: none;
+  background-color: #fff;
+}
+
+.sidebar .menu ul li {
+  line-height: 50px;
+  border-top: none;
+  color: var(--primaryColor);
+}
+
+.sidebar ul li a .item {
+  /* margin-left: 15px; */
+  transition: 0.4s;
+  transition-property: display;
+}
+.sidebar .menu ul li a {
+  font-size: 15px;
+  color: #6c757d;
+  padding-left: 50px;
+}
+.sidebar .menu li.active ul li a {
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+}
+.sidebar .menu ul li a:hover {
+  border-left-color: var(--primaryColor);
+  border-left-width: 5px;
+}
+.sidebar li a .caret-menu {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: transform 0.7s;
+}
+.sidebar li a span.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.wrapper.collapse-sidebar .sidebar {
+  width: 70px;
+}
+
+.wrapper.collapse-sidebar .main_content {
+  width: calc(100% - 70px);
+}
+
+.wrapper.collapse-sidebar .sidebar .item,
+.submenu,
+.wrapper.collapse-sidebar .sidebar .submenu li {
+  display: none;
+}

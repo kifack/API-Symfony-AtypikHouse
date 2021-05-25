@@ -1,0 +1,216 @@
+:root {
+  --primaryColor: #0090d9;
+  --secondaryColor: #e8eff7;
+  --tierColor: #1e2020;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "title-logo";
+  src: url("./../polices/vagnotie.otf");
+}
+@font-face {
+  font-family: "title-block";
+  src: url("./../polices/Vogue.ttf");
+}
+@font-face {
+  font-family: "title-secondaire";
+  src: url("./../polices/ArcaMajora3-Bold.otf");
+}
+@font-face {
+  font-family: "sans-serifSpe";
+  src: url("./../polices/Myriad-Pro_31655.ttf");
+}
+
+body {
+  background: #e9ebee !important;
+  overflow: auto;
+}
+/* ################################# Logo ###########################*/
+
+.titlesite {
+  font-family: "title-logo";
+  font-size: 2.5rem;
+  color: var(--primaryColor);
+  font-weight: 500;
+  color: var(--primaryColor) !important;
+  letter-spacing: 2px;
+}
+/* ################################# Header ###########################*/
+
+.sidebar-btn {
+  color: #fff;
+  color: var(--primaryColor);
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+.sidebar-btn:hover {
+  opacity: 0.9;
+}
+
+/* header {
+  position: fixed;
+  z-index: 2;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 10%;
+} */
+
+header nav {
+  border-bottom: 2px solid var(--primaryColor);
+}
+
+header a.nav-link {
+  color: #333 !important;
+  font-size: 1.1rem;
+}
+
+button#setting {
+  background-color: #1c6e86;
+  color: white;
+  font-size: 1rem;
+  width: 20%;
+  height: 40px;
+  border-radius: 12px;
+  margin-left: 760px;
+}
+
+/* *************************Conteneur du la sidebar************************************************** */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.wrapper .main_content {
+  width: calc(100% - 240px);
+  padding: 30px;
+  background: #eee;
+  overflow: auto;
+}
+
+.btn {
+  font-size: 16px;
+}
+
+thead {
+  background-color: var(--primaryColor);
+  color: whitesmoke;
+  border-radius: 10px 10px 0 0 !important;
+  font-family: "title-secondaire";
+  font-size: 1.2rem;
+}
+
+table {
+  border-radius: 10px 10px 0 0 !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "title-secondaire";
+}
+
+td {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  color: var(--tierColor);
+  font-family: "sans-serifSpe";
+  font-size: 1.2rem;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+label:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  border: 2px solid var(--primaryColor);
+  box-shadow: none !important;
+}
+
+.btn:active,
+.btn:focus,
+input:active,
+input:focus {
+  outline: none !important;
+  -webkit-appearance: none;
+}
+
+label {
+  font-family: "sans-serifSpe";
+  font-size: 1.1rem;
+  color: var(--tierColor);
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-default:active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.login-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 800px;
+  transform: translate(-50%, -50%);
+}
+
+/* Color */
+
+.bg-blue {
+  background: #0090d9 linear-gradient(180deg, #239edc, #0090d9) repeat-x;
+  border-color: #0090d9;
+  color: #fff;
+}
+
+button.bg-blue:hover {
+  /* background: #1b84ba; */
+  opacity: 0.85;
+}
+
+.text-blue {
+  color: #0090d9;
+}
+
+.bg-grey {
+  background: #e9ebee;
+}
+
+.btn-outline-blue {
+  border: 1px solid #0090d9 !important;
+  color: #0090d9 !important;
+}
+
+.btn-outline-blue:hover {
+  color: white !important;
+  background: #0090d9 !important;
+}

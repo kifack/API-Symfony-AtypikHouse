@@ -1,0 +1,6 @@
+@media (min-width: 768px){
+    #experiency .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 24.333333%;
+    }
+}

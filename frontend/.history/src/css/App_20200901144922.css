@@ -1,0 +1,143 @@
+blue-sky {
+  background-color: #e8f1f8 !important;
+}
+ 
+.navbar.navbar-blue {
+  padding: 0px 5px !important;
+  font-size: 15px !important;
+}
+ 
+.navbar-blue a.nav-link {
+  color: #333333;
+  position: relative;
+  /* border-right: 1px solid #333333; */
+}
+ 
+.navbar-blue .nav-link::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  background-color: #bbbbbb;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+.navbar-blue a.nav-link > i {
+  padding-right: 5px !important;
+}
+ 
+.search-area {
+  position: relative;
+  background: url("../logement.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* .dark-overlay {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: #1c6e86;
+  opacity: 0.3;
+} */
+ 
+footer a {
+  text-decoration: none;
+  color: #000000;
+  padding: 20px;
+}
+ 
+footer a:hover {
+  text-decoration: none;
+}
+ 
+.custom-card-body {
+  padding: 3rem 0 !important;
+}
+.custom-card-text {
+  font-size: 0.9rem !important;
+  padding: 0.9rem 1.9rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+/*  .card-img-top{
+transform: scale(1);
+}*/
+/*  .card-img-top:hover{
+transform: scale(1.8);
+}*/
+.custom-card-img-top {
+  width: inherit;
+  height: 100%;
+}
+.slider {
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+}
+ 
+.slider .dot {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+ 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: white !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  display: inline-block;
+}
+.prev:hover,
+.next:hover {
+  text-decoration: none !important;
+}
+.prev {
+  left: 5px;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 5px;
+  border-radius: 0 3px 3px 0;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.fade-slide {
+  animation-name: fade-slide;
+  animation-duration: 10s;
+}
+@keyframes fade-slide {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
